@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+
+    <TextView
+        android:id="@+id/tvFollowingDetail"
+        style="@style/TextView"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvFollowerDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvRepositoryDetail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/tvFollower"
+        style="@style/TextView"
+        android:layout_marginBottom="8dp"
+        android:text="@string/followers"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvFollowerDetail"
+        app:layout_constraintStart_toStartOf="@+id/tvFollowerDetail"
+        app:layout_constraintTop_toBottomOf="@+id/tvFollowerDetail" />
+
+    <TextView
+        android:id="@+id/tvRepository"
+        style="@style/TextView"
+        android:layout_marginBottom="8dp"
+        android:text="@string/repo"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvRepositoryDetail"
+        app:layout_constraintStart_toStartOf="@+id/tvRepositoryDetail"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepositoryDetail" />
+
+    <TextView
+        android:id="@+id/tvFollowerDetail"
+        style="@style/TextView"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvFollowingDetail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/tvRepositoryDetail"
+        style="@style/TextView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvFollowingDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/tvFollowing"
+        style="@style/TextView"
+        android:layout_marginBottom="8dp"
+        android:text="@string/following"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvFollowingDetail"
+        app:layout_constraintStart_toStartOf="@+id/tvFollowingDetail"
+        app:layout_constraintTop_toBottomOf="@+id/tvFollowingDetail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
